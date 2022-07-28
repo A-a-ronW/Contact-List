@@ -1,4 +1,15 @@
 body{
     padding: 24px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    background: #374151
 }
+
+#actions{
+    border:none;
+    appearance:none;
+    background:yellow;
+    outline:black;
+}
+
+
