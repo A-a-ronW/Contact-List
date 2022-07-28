@@ -9,7 +9,16 @@ body{
     border:none;
     appearance:none;
     background:yellow;
-    outline:black;
+    outline:none;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
-
+#name-entry, #number-entry{
+    background: #1F2937;
+    outline: none;
+    border:none;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+}
