@@ -48,7 +48,8 @@ window.addEventListener('load', () => {
 
         document.getElementById("contact-input").reset();
 
-
+        //Allows editing contact by disabling readonly attribute
+        //Save button appears once edit button is pressed and does the oppposite
         editBtn.addEventListener('click', (e) => {
             if(editBtn.innerHTML=="Edit")
             {
@@ -62,6 +63,11 @@ window.addEventListener('load', () => {
                 contactName.setAttribute("readonly", "readonly");
                 contactNum.setAttribute("readonly", "readonly");
             }
+        })
+
+        //Deletes contacts once button is pressed
+        deleteBtn.addEventListener('click', (e) => {
+            list.removeChild(contact_element);
         })
     })
 })
