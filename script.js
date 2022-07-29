@@ -7,6 +7,13 @@ window.addEventListener('load', () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        console.log("Submit form")
+        const name = inputName.value;
+        const number = inputNum.value;
+
+        if (!name || !number)
+        {
+            alert("Please enter a name and phone number!")
+            return;
+        }
     })
 })
