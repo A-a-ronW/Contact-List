@@ -47,13 +47,21 @@ window.addEventListener('load', () => {
         list.appendChild(contact_element);
 
         document.getElementById("contact-input").reset();
-    })
 
 
-    const del = document.querySelector('.deleteBtn');
-    del.addEventListener('delete', (e) => {
-        e.preventDefault();
-
-        alert("Delete!");
+        editBtn.addEventListener('click', (e) => {
+            if(editBtn.innerHTML=="Edit")
+            {
+                editBtn.innerHTML="Save";
+                contactName.removeAttribute("readonly");
+                contactNum.removeAttribute("readonly");
+            }
+            else 
+            {
+                editBtn.innerHTML="Edit";
+                contactName.setAttribute("readonly", "readonly");
+                contactNum.setAttribute("readonly", "readonly");
+            }
+        })
     })
 })
