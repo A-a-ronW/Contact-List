@@ -41,5 +41,7 @@ window.addEventListener('load', () => {
         contact_element.appendChild(deleteBtn);
 
         list.appendChild(contact_element);
+
+        document.getElementById("contact-input").reset();
     })
 })
