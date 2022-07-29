@@ -25,6 +25,8 @@ body{
 
 .contact-name, .contact-num{
     padding: 1rem;
+    display:inline-block;
+    width:195px;
     border-radius: 1rem;
     border:none;
     background: #111827;
