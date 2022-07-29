@@ -23,7 +23,7 @@ body{
     color: white;
 }
 
-#contact-name, #contact-num{
+.contact-name, .contact-num{
     padding: 1rem;
     border-radius: 1rem;
     border:none;
