@@ -28,11 +28,11 @@ window.addEventListener('load', () => {
         contactNum.innerText = number;
 
         const editBtn = document.createElement("button");
-        editBtn.classList.add("actions");
+        editBtn.classList.add("editBtn");
         editBtn.innerText = "Edit";
 
-        const deleteBtn = document.createElement("delete");
-        deleteBtn.classList.add("actions");
+        const deleteBtn = document.createElement("button");
+        deleteBtn.classList.add("deleteBtn");
         deleteBtn.innerText = "Delete";
 
         contact_element.appendChild(contactName);
@@ -43,5 +43,11 @@ window.addEventListener('load', () => {
         list.appendChild(contact_element);
 
         document.getElementById("contact-input").reset();
+    })
+
+    form.addEventListener('.e', (e) =>{
+        e.preventDefault();
+
+
     })
 })
