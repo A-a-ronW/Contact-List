@@ -45,6 +45,7 @@ window.addEventListener('load', () => {
         document.getElementById("contact-input").reset();
     })
 
+
     const del = document.querySelector('.deleteBtn');
     del.addEventListener('delete', (e) => {
         e.preventDefault();
