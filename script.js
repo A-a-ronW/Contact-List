@@ -15,5 +15,31 @@ window.addEventListener('load', () => {
             alert("Please enter a name and phone number!")
             return;
         }
+
+        const contact_element = document.createElement("div");
+        contact_element.classList.add("contact");
+
+        const contactName = document.createElement("span");
+        contactName.classList.add("contact-name");
+        contactName.innerText = name;
+
+        const contactNum = document.createElement("span");
+        contactNum.classList.add("contact-num");
+        contactNum.innerText = number;
+
+        const editBtn = document.createElement("button");
+        editBtn.classList.add("actions");
+        editBtn.innerText = "Edit";
+
+        const deleteBtn = document.createElement("delete");
+        deleteBtn.classList.add("actions");
+        deleteBtn.innerText = "Delete";
+
+        contact_element.appendChild(contactName);
+        contact_element.appendChild(contactNum);
+        contact_element.appendChild(editBtn);
+        contact_element.appendChild(deleteBtn);
+
+        list.appendChild(contact_element);
     })
 })

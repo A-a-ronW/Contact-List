@@ -5,13 +5,14 @@ body{
     background: #374151
 }
 
-#actions{
+.actions{
     border:none;
     appearance:none;
     background:yellow;
     outline:none;
     padding: 1rem;
     border-radius: 1rem;
+    margin-right: 0.25rem;
 }
 
 #name-entry, #number-entry{
@@ -31,4 +32,6 @@ body{
     border:none;
     background: #111827;
     color:white;
+    margin-bottom: 0.5rem;
+    margin-right: 0.25rem;
 }
