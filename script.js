@@ -4,6 +4,7 @@ window.addEventListener('load', () => {
     const inputNum = document.querySelector("#number-entry");
     const list = document.querySelector("#contacts");
 
+    //Add contact entry upon hitting 'Add' button
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
@@ -50,7 +51,13 @@ window.addEventListener('load', () => {
 
         //Allows editing contact by disabling readonly attribute
         //Save button appears once edit button is pressed and does the oppposite
-        editBtn.addEventListener('click', (e) => {
+        editBtn.addEventListener('click', editContact);
+
+        //Deletes contacts once button is pressed
+        deleteBtn.addEventListener('click', deleteContact);
+
+        function editContact()
+        {
             if(editBtn.innerHTML=="Edit")
             {
                 editBtn.innerHTML="Save";
@@ -63,11 +70,11 @@ window.addEventListener('load', () => {
                 contactName.setAttribute("readonly", "readonly");
                 contactNum.setAttribute("readonly", "readonly");
             }
-        })
+        }
 
-        //Deletes contacts once button is pressed
-        deleteBtn.addEventListener('click', (e) => {
+        function deleteContact()
+        {
             list.removeChild(contact_element);
-        })
+        }
     })
 })
